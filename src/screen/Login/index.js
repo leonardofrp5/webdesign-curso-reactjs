@@ -9,7 +9,7 @@ class Login extends Component {
 
   renderItem = (item) => {
     return (
-      <div key={item.key} className="content-input">
+      <div key={item.name} className="content-input">
         <label className="text-label">{item.label}:</label>
         <input type={item.type} name={item.name} className="decoration-input"/>
       </div>
