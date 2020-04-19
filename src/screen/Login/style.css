@@ -1,9 +1,6 @@
 .from-container {
   background-color: #F4F4F4;
   border-top: 8px solid #00ADEE;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   height: 350px;
   left: 50%;
   position: absolute;
@@ -17,28 +14,6 @@
   display: flex;
   margin: auto;
   padding: 10px;
-}
-
-.content-input {
-  display: flex;
-  flex-direction: column;
-  padding: 10px 40px;
-}
-
-.text-label {
-  display: flex;
-  font-family: 'Roboto', sans-serif;
-  size: 16px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-  color: #000000;
-}
-
-.decoration-input {
-  border: none;
-  border-radius: 5px;
-  height: 32px;
-  width: 215px;
 }
 
 .btn-login{

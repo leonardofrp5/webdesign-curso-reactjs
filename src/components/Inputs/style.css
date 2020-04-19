@@ -1,0 +1,21 @@
+.content-input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px;
+}
+
+.text-label {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  size: 16px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #000000;
+}
+
+.decoration-input {
+  border: none;
+  border-radius: 5px;
+  height: 32px;
+  width: 215px;
+}
