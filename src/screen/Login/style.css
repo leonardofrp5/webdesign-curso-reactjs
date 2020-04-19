@@ -1,6 +1,9 @@
 .from-container {
   background-color: #F4F4F4;
   border-top: 8px solid #00ADEE;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: 350px;
   left: 50%;
   position: absolute;
@@ -43,6 +46,17 @@
   background-color: #ffffff;
   border: solid 2px #BED23C;
   color: #BED23C;
+  display: flex;
+  font-size: 16px;
+  margin: auto;
+  padding: 10px;
+}
+
+.count {
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 2px #2c2c22;
+  color: #2c2c22;
   display: flex;
   font-size: 16px;
   margin: auto;
