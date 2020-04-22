@@ -1,0 +1,21 @@
+.image-login {
+  width: 100px;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
+.content-input {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 40px;
+}
+
+.text-label {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  size: 16px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #000000;
+}
