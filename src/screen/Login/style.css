@@ -9,11 +9,11 @@
   width: 300px;
 }
 
-.image-login {
-  width: 100px;
-  display: flex;
-  margin: auto;
-  padding: 10px;
+.decoration-input {
+  border: none;
+  border-radius: 5px;
+  height: 32px;
+  width: 215px;
 }
 
 .btn-login{

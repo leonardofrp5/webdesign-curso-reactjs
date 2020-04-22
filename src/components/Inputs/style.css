@@ -1,3 +1,10 @@
+.image-login {
+  width: 100px;
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+
 .content-input {
   display: flex;
   flex-direction: column;
@@ -11,11 +18,4 @@
   padding-bottom: 5px;
   padding-top: 5px;
   color: #000000;
-}
-
-.decoration-input {
-  border: none;
-  border-radius: 5px;
-  height: 32px;
-  width: 215px;
 }
