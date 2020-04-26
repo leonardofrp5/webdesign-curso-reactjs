@@ -10,3 +10,5 @@ export const INPUT_LOGIN = [
     label: 'Contraseña'
   }
 ]
+
+export const TEXT_BUTTON_LOGIN = 'Ingresar';
