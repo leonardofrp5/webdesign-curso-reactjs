@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ReactComponent as UsuarioLogin } from '../../assets/usuario.svg';
 
 import Input from '../../components/Inputs';
 import Button from '../../components/Buttons';
 import { INPUT_LOGIN, TEXT_BUTTON_LOGIN } from './constants';
+import Child from './components/Child';
 import './style.css';
 
 // class Login extends Component {
@@ -49,21 +50,34 @@ import './style.css';
 //   }
 // }
 
-function Login() {
+class Login extends Component {
+  state =  {
+    numeroPadre: 0
+  }
 
-  const handleOnClickLogon = () => {
+  handleOnClickLogon = () => {
     console.log('mensaje al dar click');
   }
 
-  return (
-    <div className="from-container">
-      <UsuarioLogin className="image-login"/>
-      <form>
-      {INPUT_LOGIN.map(input => <Input item={input} key={input.name}/>)}
-        <Button value={TEXT_BUTTON_LOGIN} handleOnClickLogon={handleOnClickLogon}/>
-      </form>
-    </div>
-  )
+  handlePadre = (NumeroHijo) => {
+    this.setState({numeroPadre: NumeroHijo})
+    console.log('funcion del padre');
+  }
+
+  render() {
+    const { numeroPadre } = this.state;
+    return (
+      <div className="from-container">
+        <UsuarioLogin className="image-login"/>
+        <form>
+        {INPUT_LOGIN.map(input => <Input item={input} key={input.name}/>)}
+          <Button value={TEXT_BUTTON_LOGIN} handleOnClickLogon={this.handleOnClickLogon}/>
+          <Child  handlePadre={this.handlePadre}/>
+          <h1>{numeroPadre}</h1>
+        </form>
+      </div>
+    )
+  }
 }
 
 export default Login
